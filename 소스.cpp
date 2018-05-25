@@ -20,6 +20,9 @@ int main() {
 	case '-':
 		cout << input1 - input2 << endl;
 		break;
+	case '*':
+		cout << input1 * input2 << endl;
+		break;
 	
 	}
 
