@@ -24,8 +24,16 @@ int main() {
 		cout << input1 * input2 << endl;
 		break;
 	case '/':
-		cout << input1 / input2 << endl;
-		break;
+		if (input1 == 0 || input2 == 0) {
+			cout << "You cannot divide an integer by zero." << endl;
+			break;
+		}
+
+		else {
+			cout << input1 / input2 << endl;
+			break;
+		}
+
 	case '%':
 		cout << input1 % input2 << endl;
 		break;
@@ -33,6 +41,5 @@ int main() {
 		cout << "Program should never reach here." << endl;
 		break;
 	}
-
-
+	
 }
