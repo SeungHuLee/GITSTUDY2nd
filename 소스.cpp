@@ -29,7 +29,9 @@ int main() {
 	case '%':
 		cout << input1 % input2 << endl;
 		break;
-	
+	default:
+		cout << "Program should never reach here." << endl;
+		break;
 	}
 
 
